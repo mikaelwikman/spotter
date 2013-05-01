@@ -5,4 +5,8 @@ match 'utah', w(/(us )?ut/) do
   match 'wales' do
     set place: 'wales'
   end
+
+  match 'venice' do
+    set place: 'venice'
+  end
 end

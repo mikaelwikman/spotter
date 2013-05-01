@@ -5,4 +5,8 @@ match 'nebraska', w(/(us )?ne/) do
   match 'peru' do
     set place: 'peru'
   end
+
+  match 'carroll' do
+    set place: 'carroll'
+  end
 end

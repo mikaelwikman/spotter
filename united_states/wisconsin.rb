@@ -18,4 +18,12 @@ match 'wisconsin', w(/(us )?wi/) do
   match 'london' do
     set place: 'london'
   end
+
+  match 'montana' do
+    set place: 'montana'
+  end
+  
+  match 'texas' do
+    set place: 'texas'
+  end
 end

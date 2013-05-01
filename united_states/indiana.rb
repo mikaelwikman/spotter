@@ -17,4 +17,7 @@ match 'indiana', w(/(us )?in/) do
   match 'peru' do
     set place: 'peru'
   end
+  match 'georgia' do
+    set place: 'georgia'
+  end
 end

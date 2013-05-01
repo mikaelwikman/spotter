@@ -3,6 +3,10 @@ match 'west virginia', w(/(us )?wv/) do
   set subregion: 'west virginia'
   set subregion_type: 'state'
 
+  match 'texas' do
+    set place: 'texas'
+  end
+
   match 'cuba' do
     set place: 'cuba'
   end

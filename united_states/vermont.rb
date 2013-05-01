@@ -5,4 +5,8 @@ match 'vermont', w(/(us )?vt/) do
   match 'peru' do
     set place: 'peru'
   end
+  
+  match 'georgia' do
+    set place: 'georgia'
+  end
 end

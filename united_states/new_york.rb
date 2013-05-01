@@ -21,4 +21,16 @@ match 'new york', w(/(us )?ny/) do
   match 'wales' do
     set place: 'wales'
   end
+
+  match 'texas' do
+    set place: 'texas'
+  end
+
+  match 'venice' do
+    set place: 'venice'
+  end
+
+  match 'carroll' do
+    set place: 'carroll'
+  end
 end

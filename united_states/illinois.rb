@@ -21,4 +21,12 @@ match 'illinois', w(/(us )?il/) do
   match w(/london( mills)?/) do
     set place: 'london'
   end
+
+  match 'venice' do
+    set place: 'venice'
+  end
+
+  match w(/(mount )?carroll/) do
+    set place: 'mount carroll'
+  end
 end

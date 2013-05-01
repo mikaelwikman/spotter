@@ -14,4 +14,8 @@ match 'kansas', w(/(us )?ks/) do
   match 'kentucky' do
     set place: 'kentucky township'
   end
+
+  match 'tampa' do
+    set place: 'tampa'
+  end
 end

@@ -9,4 +9,8 @@ match 'ab', 'alberta' do
   match 'new norway' do
     set place: 'new norway'
   end
+
+  match 'queensland' do
+    set place: 'queensland'
+  end
 end

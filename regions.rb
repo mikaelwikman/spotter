@@ -28,38 +28,7 @@ match 'zimbabwe' do
 end
 
 match /united states/, w(/u ?s ?a?/), 'сша', 
-    # states
-    'minneapolis',
-    'mississippi', 
-    both('montana', no('bulgaria'), no('bg'), no('switzerland'), no('ch')),
-    'nebraska',
-    /^nevada( nevada)?$/,
-    'new jersey',
-    'new hampshire',
-    'new york',
-    'north carolina',
-    'ohio',
-    'oklahoma',
-    'oregon', 
-    'santa ana california', 'california santa ana',
-    'scottsdale arizona', 'arizona scottsdale',
-    'south carolina', 
-    'south dakota',
-    w(/fl(orida)? tampa/), w(/tampa fl(orida)?/),
-    'tennessee',
-    both('texas', no('queensland')),
-    'utah',
-    w(/fl(orida)? venice/), w(/venice fl(ordia)?/),
-    /^(vermont|vermont vermont)$/,
-    'virginia', 
-    /^washington( washington)?$/,
-    'wisconsin',
-
     # counties
-    'allegany', 
-    'california san diego',
-    'california torrance',
-    'california novato',
     both(/carroll/, no('wales')), 
     'pennsylvania', 
     'chautauqua',
@@ -159,6 +128,11 @@ end
 match /switzerland/, /^ch$/ do
   set region: 'switzerland'
   set region_type: 'country'
+  set subregion_type: 'canton'
+  set subsubregion_type: 'district'
+  set subsubsubregion_type: 'municipality'
+
+  include_subfolder 'switzerland'
 end
 
 match /georgia/ do
@@ -176,6 +150,7 @@ end
 match 'italy', /^it$/ do
   set region: 'italy'
   set region_type: 'country'
+  include_subfolder 'italy'
 end
 
 match /sweden/, /^se$/ do
@@ -227,6 +202,8 @@ end
 match 'bulgaria', 'болгария' do
   set region: 'bulgaria'
   set region_type: 'country'
+  set subregion_type: 'province'
+  include_subfolder 'bulgaria'
 end
 
 match 'spain' do
@@ -519,4 +496,22 @@ match 'nigeria' do
   set subregion_type: 'state'
   set subsubregion_type: 'local government area'
   include_subfolder 'nigeria'
+end
+
+match 'solomon islands' do
+  set region: 'solomon islands'
+  set region_type: 'country'
+  set subregion_type: 'province'
+
+  include_subfolder 'solomon_islands'
+end
+
+match w(/(south georgia )?(and the )?south sandwhich islands/), 'sgssi' do
+  set region: 'south georgia and the south sandwhich islands'
+  set region_type: 'british overseas territory'
+  set subregion_type: 'island'
+  
+  match 'south georgia' do
+    set subregion: 'south georgia'
+  end
 end

@@ -5,4 +5,8 @@ match 'iowa', w(/(us )?ia/) do
   match w(/(old )?peru/) do
     set place: 'peru'
   end
+
+  match 'carroll' do
+    set place: 'carroll'
+  end
 end
