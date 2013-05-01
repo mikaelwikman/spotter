@@ -30,4 +30,8 @@ match 'west virginia', w(/(us )?wv/) do
   match 'israel' do
     set place: 'israel'
   end
+
+  match 'ireland' do
+    set place: 'ireland'
+  end
 end

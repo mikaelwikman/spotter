@@ -17,4 +17,16 @@ match 'maine', w(/(us )?me/) do
   match 'denmark' do
     set place: 'denmark'
   end
+
+  match 'mexico' do
+    set place: 'mexico'
+  end
+
+  match 'norway' do
+    set place: 'norway'
+  end
+
+  match 'poland' do
+    set place: 'poland'
+  end
 end

@@ -37,4 +37,8 @@ match 'illinois', w(/(us )?il/) do
   match w(/(little )?egypt/) do
     set place: 'little egypt'
   end
+
+  match 'norway' do
+    set place: 'norway'
+  end
 end

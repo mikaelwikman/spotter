@@ -13,4 +13,12 @@ match 'pennsylvania', w(/(us )?pa/) do
   match 'egypt' do
     set place: 'egypt'
   end
+
+  match 'mexico' do
+    set place: 'mexico'
+  end
+
+  match 'germany' do
+    set place: 'germany'
+  end
 end

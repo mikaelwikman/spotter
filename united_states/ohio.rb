@@ -23,4 +23,16 @@ match 'ohio', w(/(us )?oh/) do
   match 'egypt' do
     set place: 'egypt'
   end
+
+  match 'mexico' do
+    set place: 'mexico'
+  end
+
+  match 'poland' do
+    set place: 'poland'
+  end
+
+  match 'russia' do
+    set place: 'russia'
+  end
 end

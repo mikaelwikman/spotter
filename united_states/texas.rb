@@ -13,4 +13,16 @@ match 'texas', w(/(us )?tx/) do
   match 'egypt' do
     set place: 'egypt'
   end
+
+  match 'mexico' do
+    set place: 'mexico'
+  end
+
+  match 'turkey' do
+    set place: 'turkey'
+  end
+
+  match 'italy' do
+    set place: 'italy'
+  end
 end

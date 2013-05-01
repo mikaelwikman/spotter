@@ -14,4 +14,8 @@ match 'kentucky', w(/(us )?ky/) do
   match 'jordan' do
     set place: 'jordan'
   end
+
+  match 'mexico' do
+    set place: 'mexico'
+  end
 end

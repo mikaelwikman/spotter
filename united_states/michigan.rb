@@ -13,4 +13,8 @@ match 'michigan', w(/(us )?mi/) do
   match w(/china( township)?/) do
     set place: 'china township'
   end
+
+  match 'norway' do
+    set place: 'norway'
+  end
 end

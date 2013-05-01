@@ -19,6 +19,14 @@ match 'england' do
     end
   end
 
+  match 'bedfordshire' do
+    set subsubregion: 'bedfordshire'
+
+    match 'ireland' do
+      set place: 'ireland'
+    end
+  end
+
   match 'london' do
     set place: 'london'
   end

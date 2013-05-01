@@ -41,4 +41,20 @@ match 'indiana', w(/(us )?in/) do
   match 'long beach' do
     set place: 'long beach'
   end
+
+  match 'mexico' do
+    set place: 'mexico'
+  end
+
+  match 'norway' do
+    set place: 'norway'
+  end
+
+  match 'poland' do
+    set place: 'poland'
+  end
+
+  match 'ireland' do
+    set place: 'ireland'
+  end
 end

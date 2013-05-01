@@ -35,4 +35,16 @@ match 'minnesota', w(/(us )?mn/) do
   match w(/luxemburg( township)?/) do
     set place: 'luxemburg township'
   end
+
+  match w(/norway( township)?/) do
+    set place: 'norway township'
+  end
+
+  match w(/(little )?canada/) do
+    set place: 'little canada'
+  end
+
+  match w(/russia( township)?/) do
+    set place: 'russia township'
+  end
 end

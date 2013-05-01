@@ -14,4 +14,8 @@ match 'north carolina', w(/(us )?nc/) do
   match 'long beach' do
     set place: 'long beach'
   end
+
+  match 'turkey' do
+    set place: 'turkey'
+  end
 end

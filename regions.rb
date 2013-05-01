@@ -3,7 +3,7 @@ match 'ireland', 'ie' do
   set region_type: 'country'
 end
 
-match /phill?ipp?ines/, do
+match /phill?ipp?ines/, 'ph' do
   set region: 'philippines'
   set region_type: 'country'
   set subregion_type: 'province'
@@ -18,63 +18,18 @@ match 'canada', 'ca' do
   include_subfolder: 'canada'
 end
 
-match 'kiribati' do
+match 'kiribati', 'ki' do
   set region: 'kiribati'
   set region_type: 'country'
   include_subfolder: 'kiribati'
 end
 
-match 'zimbabwe' do
+match 'zimbabwe', 'zw' do
   set region: 'zimbabwe'
   set region_type: 'country'
 end
 
-match /united states/, w(/u ?s ?a?/), 'сша', 
-    # cities that could be mistaken for a country
-    'mexico beach',
-    /mexico.* (mo|ny|in|ky|me|md|oh|pa)( |$)/,
-    'new egypt',
-    /norway.* (il|in|ia|ks|me|mi|ny|sc|wi)( |$)/,
-    'san jose california', 'california san jose',
-    /spain.* sd/,
-    /turkey.* (nc|tx)( |$)/,
-    /poland.* (in|me|ny|oh|wi)( |$)/,
-    'portage county',
-
-    # smaller regions
-    'arlington tx',
-    'boca raton', 
-    'caldwell id',
-    'camarillo california', 'california camarillo',
-    'chico ca',
-    'colchester vt',
-    'daytona',
-    'denton tx',
-    'englewood colorado', 'colorado englewood',
-    'fort lauderdale',
-    'kent wa', 
-    'herkimer',
-    'long beach california', 'california long beach',
-    'mahoning',
-    'markham ontario', 'ontario markham',
-    'mcallen tx',
-    'mesa arizona', 'arizona mesa',
-    'miami',
-    'missoula',
-    'myrtle beach',
-    w(/sarasota fl(orida)?/), w(/fl(orida)? sarasota/),
-    w(/st augustine fl(orida)?/), w(/fl(orida)? st augustine/),
-    'st paul mn',
-    w(/stuart fl(orida)?/), w(/fl(orida)? stuart/),
-    'orlando',
-    'pampa tx',
-    'phoenix arizona', 'arizona phoenix',
-    'portland me',
-    'seattle washington', 'washington seattle',
-    'trenton sc',
-    'van nuys california', 'california van nuys',
-    w(/west palm beach fl(orida)?/), w(/fl(orida)? west palm beach/)
-      ) do
+match /united states/, w(/u ?s ?a?/), 'сша' do
   set region: 'united states'
   set region_type: 'country'
   set subregion_type: 'state'
@@ -92,14 +47,14 @@ match /germany/, 'германия', 'de', /schwabm(ü|u)nchen/ do
   end
 end
 
-match /australia/, 'denmark river', 'queensland' do
+match /australia/, 'au' do
   set region: 'australia'
   set region_type: 'country'
   set subregion_type: 'state'
   include_subfolder 'australia'
 end
 
-match /россия/, 'russia' do
+match /россия/, 'russia', 'ru' do
   set region: 'russia'
   set region_type: 'country'
 end
@@ -110,7 +65,7 @@ match /united kingdom/, 'uk', 'u.k', 'u.k.', 'great britain', 'england', /^gb$/,
   set subregion_type: 'country'
 end
 
-match /switzerland/, /^ch$/ do
+match /switzerland/, 'ch' do
   set region: 'switzerland'
   set region_type: 'country'
   set subregion_type: 'canton'
@@ -120,19 +75,19 @@ match /switzerland/, /^ch$/ do
   include_subfolder 'switzerland'
 end
 
-match /georgia/ do
+match /georgia/, 'ge' do
   set region: 'georgia'
   set region_type: 'country'
 end
 
-match /south africa/, 'za', 'limpopo' do
+match /south africa/, 'za' do
   set region: 'south africa'
   set region_type: 'country'
   set subregion_type: 'province'
   include_subfolder 'south_africa'
 end
 
-match 'italy', /^it$/ do
+match 'italy', 'it' do
   set region: 'italy'
   set region_type: 'country'
   include_subfolder 'italy'
@@ -517,4 +472,18 @@ match 'hong kong' do
   set region_type: 'special administrative region'
   set subregion_type: 'district'
   include_subfolder 'hong_kong'
+end
+
+match 'bermuda' do
+  set region: 'bermuda'
+  set region_type: 'british overseas territory'
+  set subregion_type: 'island'
+  include_subfolder 'bermuda'
+end
+
+match 'papua new guinea' do
+  set region: 'papua new guinea'
+  set region_type: 'country'
+  set subregion_type: 'island'
+  include_subfolder 'papua_new_guinea'
 end

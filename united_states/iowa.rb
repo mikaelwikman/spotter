@@ -21,4 +21,9 @@ match 'iowa', w(/(us )?ia/) do
   match 'luxemburg' do
     set place: 'luxemburg'
   end
+
+
+  match 'norway' do
+    set place: 'norway'
+  end
 end

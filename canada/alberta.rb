@@ -13,4 +13,8 @@ match 'ab', 'alberta' do
   match 'queensland' do
     set place: 'queensland'
   end
+
+  match w(/(new )?norway/) do
+    set place: 'new norway'
+  end
 end

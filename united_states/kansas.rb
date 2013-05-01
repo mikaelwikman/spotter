@@ -18,4 +18,12 @@ match 'kansas', w(/(us )?ks/) do
   match 'tampa' do
     set place: 'tampa'
   end
+
+  match 'norway' do
+    set place: 'norway'
+  end
+
+  match 'canada' do
+    set place: 'canada'
+  end
 end

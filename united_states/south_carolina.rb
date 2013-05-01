@@ -5,4 +5,8 @@ match 'south carolina', w(/(us )?sc/) do
   match 'denmark' do
     set place: 'denmark'
   end
+
+  match 'norway' do
+    set place: 'norway'
+  end
 end

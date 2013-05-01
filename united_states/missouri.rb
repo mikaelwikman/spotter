@@ -19,4 +19,8 @@ match 'missouri', w(/(us )?mo/) do
   match 'maryland' do
     set place: 'maryland'
   end
+
+  match 'mexico' do
+    set place: 'mexico'
+  end
 end

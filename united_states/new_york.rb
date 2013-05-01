@@ -49,4 +49,24 @@ match 'new york', w(/(us )?ny/) do
   match 'long beach' do
     set place: 'long beach'
   end
+
+  match 'mexico' do
+    set place: 'mexico'
+  end
+
+  match 'norway' do
+    set place: 'norway'
+  end
+
+  match 'poland' do
+    set place: 'poland'
+  end
+
+  match 'russia' do
+    set place: 'russia'
+  end
+
+  match 'italy' do
+    set place: 'italy'
+  end
 end
