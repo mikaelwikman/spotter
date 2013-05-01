@@ -11,6 +11,14 @@ match 'england' do
     end
   end
 
+  match 'buckinghamshire' do
+    set subsubregion: 'buckinghamshire'
+
+    match 'egypt' do
+      set place: 'egypt'
+    end
+  end
+
   match 'london' do
     set place: 'london'
   end

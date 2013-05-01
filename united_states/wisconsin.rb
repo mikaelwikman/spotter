@@ -26,4 +26,20 @@ match 'wisconsin', w(/(us )?wi/) do
   match 'texas' do
     set place: 'texas'
   end
+
+  match 'belgium' do
+    set place: 'belgium'
+  end
+
+  match 'denmark' do
+    set place: 'denmark'
+  end
+
+  match 'jordan' do
+    set place: 'jordan'
+  end
+
+  match 'luxemburg' do
+    set place: 'luxemburg'
+  end
 end

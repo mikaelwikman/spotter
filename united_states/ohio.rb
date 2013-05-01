@@ -19,4 +19,8 @@ match 'ohio', w(/(us )?oh/) do
   match 'carroll' do
     set place: 'carroll'
   end
+
+  match 'egypt' do
+    set place: 'egypt'
+  end
 end

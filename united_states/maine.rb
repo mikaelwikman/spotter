@@ -9,4 +9,12 @@ match 'maine', w(/(us )?me/) do
   match 'wales' do
     set place: 'wales'
   end
+
+  match 'china' do
+    set place: 'china'
+  end
+
+  match 'denmark' do
+    set place: 'denmark'
+  end
 end

@@ -1,4 +1,7 @@
 match 'guimaras'  do
   set subregion: 'guimaras' 
-  set subregion_type: 'province'
+
+  match 'jordan' do
+    set subsubregion: 'jordan'
+  end
 end

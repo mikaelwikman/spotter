@@ -19,4 +19,20 @@ match 'minnesota', w(/(us )?mn/) do
   match 'london' do
     set place: 'london'
   end
+
+  match w(/belgium( township)?/ do
+    set place: 'belgium township'
+  end
+
+  match 'jordan' do
+    set place: 'jordan'
+  end
+
+  match 'long beach' do
+    set place: 'long beach'
+  end
+
+  match w(/luxemburg( township)?/) do
+    set place: 'luxemburg township'
+  end
 end

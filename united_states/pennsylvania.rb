@@ -9,4 +9,8 @@ match 'pennsylvania', w(/(us )?pa/) do
   match 'carroll' do
     set place: 'carroll'
   end
+
+  match 'egypt' do
+    set place: 'egypt'
+  end
 end

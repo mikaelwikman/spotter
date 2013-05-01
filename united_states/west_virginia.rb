@@ -18,4 +18,16 @@ match 'west virginia', w(/(us )?wv/) do
   match 'london' do
     set place: 'london'
   end
+
+  match 'belgium' do
+    set place: 'belgium'
+  end
+
+  match 'egypt' do
+    set place: 'egypt'
+  end
+
+  match 'israel' do
+    set place: 'israel'
+  end
 end

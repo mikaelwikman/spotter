@@ -29,4 +29,12 @@ match 'illinois', w(/(us )?il/) do
   match w(/(mount )?carroll/) do
     set place: 'mount carroll'
   end
+
+  match 'belgium' do
+    set place: 'belgium'
+  end
+
+  match w(/(little )?egypt/) do
+    set place: 'little egypt'
+  end
 end

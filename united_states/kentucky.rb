@@ -10,4 +10,8 @@ match 'kentucky', w(/(us )?ky/) do
   match 'london' do
     set place: 'london'
   end
+
+  match 'jordan' do
+    set place: 'jordan'
+  end
 end

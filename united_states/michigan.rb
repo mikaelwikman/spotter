@@ -9,4 +9,8 @@ match 'michigan', w(/(us )?mi/) do
   match w(/wales( township)?/ do
     set place: 'wales township'
   end
+
+  match w(/china( township)?/) do
+    set place: 'china township'
+  end
 end

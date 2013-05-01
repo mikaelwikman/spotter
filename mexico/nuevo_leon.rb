@@ -6,4 +6,8 @@ match w(/nuevo le(o|ó)n/) do
   match 'colombia' do
     set place: 'colombia'
   end
+
+  match 'china' do
+    set place: 'china'
+  end
 end

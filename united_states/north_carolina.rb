@@ -6,4 +6,12 @@ match 'north carolina', w(/(us )?nc/) do
   match 'bolivia' do
     set place: 'bolivia'
   end
+
+  match 'jordan' do
+    set place: 'jordan'
+  end
+
+  match 'long beach' do
+    set place: 'long beach'
+  end
 end

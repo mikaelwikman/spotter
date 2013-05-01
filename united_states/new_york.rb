@@ -33,4 +33,20 @@ match 'new york', w(/(us )?ny/) do
   match 'carroll' do
     set place: 'carroll'
   end
+
+  match 'denmark' do
+    set place: 'denmark'
+  end
+  
+  match 'greece' do
+    set place: 'greece'
+  end
+
+  match 'jordan' do
+    set place: 'jordan'
+  end
+
+  match 'long beach' do
+    set place: 'long beach'
+  end
 end

@@ -21,4 +21,8 @@ match w(/(ca )?on/), 'ontario' do
   match 'london' do
     set  place: 'london'
   end
+
+  match 'long beach' do
+    set place: 'long beach'
+  end
 end

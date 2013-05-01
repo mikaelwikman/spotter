@@ -10,4 +10,8 @@ match 'arkansas', w(/(us )?ar/) do
   match 'london' do
     set place: 'london'
   end
+
+  match 'egypt' do
+    set place: 'egypt'
+  end
 end

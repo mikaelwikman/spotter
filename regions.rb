@@ -6,6 +6,8 @@ end
 match /phill?ipp?ines/, do
   set region: 'philippines'
   set region_type: 'country'
+  set subregion_type: 'province'
+  set subsubregion_type: 'municipality'
   include_subfolder: 'philippines'
 end
 
@@ -28,24 +30,7 @@ match 'zimbabwe' do
 end
 
 match /united states/, w(/u ?s ?a?/), 'сша', 
-    # counties
-    both(/carroll/, no('wales')), 
-    'pennsylvania', 
-    'chautauqua',
-
     # cities that could be mistaken for a country
-    /belgium.* (is|wv|wi|mn)( |$)/,
-    /brazil.* in( |$)/,
-    /china.* (in|me|mi|tx)( |$)/,
-    /denmark.* (ia|me|ny|sc|wi)( |$)/,
-    /egypt.* (ar|in|oh|pa|tx|wv|nj)($| )/,
-    'france avenue',  
-    w(/greece.* ny/),
-    w(/israel.* wi/),
-    /jordan.* (in|ia|ky|mn|mt|ny|nc|or|wi)( |$)/,
-    'little egypt',
-    'long beach ca', 
-    /luxembourg.* (ia|wi|mn)( |$)/,
     'mexico beach',
     /mexico.* (mo|ny|in|ky|me|md|oh|pa)( |$)/,
     'new egypt',
@@ -225,6 +210,8 @@ end
 match 'poland', 'jordanowo' do
   set region: 'poland'
   set region_type: 'country'
+  set subregion_type: 'voivodeship'
+  include_subfolder 'poland'
 end
 
 match 'australia', /^au$/ do
@@ -240,6 +227,8 @@ end
 match 'japan', 'kagoshima' do
   set region: 'japan'
   set region_type: 'country'
+  set subregion_type: 'prefecture'
+  include_subfolder 'japan'
 end
 
 match 'china', 'hong kong' do
@@ -255,11 +244,16 @@ end
 match 'belgium', w(/luxembourg.* be/) do
   set region: 'belgium'
   set region_type: 'country'
+  set subregion_type: 'region'
+  set subsubregion_type: 'province'
+  include_subfolder 'belgium'
 end
 
 match 'india' do
   set region: 'india'
   set region_type: 'country'
+  set subregion_type: 'state'
+  include_subfolder 'india'
 end
 
 match 'norway' do
@@ -332,6 +326,8 @@ end
 match 'bolivia' do
   set region: 'bolivia'
   set region_type: 'country'
+  set subregion_type: 'department'
+  set subsubregion_type: 'province'
   include_subfolder 'bolivia'
 end
 
@@ -350,7 +346,7 @@ match 'pakistan' do
   set region_type: 'country'
 end
 
-match 'luxembourg' do
+match w(/luxembo?urg/) do
   set region: 'luxembourg'
   set region_type: 'country'
 end
@@ -514,4 +510,11 @@ match w(/(south georgia )?(and the )?south sandwhich islands/), 'sgssi' do
   match 'south georgia' do
     set subregion: 'south georgia'
   end
+end
+
+match 'hong kong' do
+  set region: 'hong kong'
+  set region_type: 'special administrative region'
+  set subregion_type: 'district'
+  include_subfolder 'hong_kong'
 end

@@ -9,4 +9,16 @@ match 'iowa', w(/(us )?ia/) do
   match 'carroll' do
     set place: 'carroll'
   end
+
+  match 'denmark' do
+    set place: 'denmark'
+  end
+
+  match 'jordan' do
+    set place: 'jordan'
+  end
+
+  match 'luxemburg' do
+    set place: 'luxemburg'
+  end
 end
