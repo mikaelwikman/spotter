@@ -69,4 +69,8 @@ match 'new york', w(/(us )?ny/) do
   match 'italy' do
     set place: 'italy'
   end
+
+  match 'sweden' do
+    set place: 'sweden'
+  end
 end

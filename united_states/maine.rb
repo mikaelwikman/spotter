@@ -29,4 +29,8 @@ match 'maine', w(/(us )?me/) do
   match 'poland' do
     set place: 'poland'
   end
+
+  match 'sweden' do
+    set place: 'sweden'
+  end
 end

@@ -93,12 +93,12 @@ match 'italy', 'it' do
   include_subfolder 'italy'
 end
 
-match /sweden/, /^se$/ do
+match /sweden/, 'se' do
   set region: 'sweden'
   set region_type: 'country'
 end
 
-match /brazil/ do
+match /brazil/, 'br' do
   set region: 'brazil'
   set region_type: 'country'
   set subregion_type: 'state'
@@ -106,56 +106,61 @@ match /brazil/ do
   include_subfolder 'brazil'
 end
 
-match 'france', 'luxembourg garden' do
+match 'france', 'fr' do
   set region: 'france'
   set region_type: 'country'
   set subregion_type: 'region'
   include_subfolder 'france'
 end
 
-match 'singapore', /^sg$/ do
+match 'singapore', 'sg' do
   set region: 'singapore'
   set region_type: 'country'
 end
 
-match 'monaco', /^mc$/ do
+match 'monaco', 'mc' do
   set region: 'monaco'
   set region_type: 'country'
 end
 
-match 'mexico', 'méxico' do
+match 'mexico', 'méxico', 'mx' do
   set region: 'mexico'
   set region_type: 'country'
   include_subfolder 'mexico'
 end
 
-match 'ukraine', 'украина' do
+match 'ukraine', 'украина', 'ua' do
   set region: 'ukraine'
   set region_type: 'country'
 end
 
-match 'austria', /^at$/ do
+match 'austria', 'at' do
   set region: 'austria'
   set region_type: 'country'
 end
 
-match 'bulgaria', 'болгария' do
+match 'bulgaria', 'болгария', 'bg' do
   set region: 'bulgaria'
   set region_type: 'country'
   set subregion_type: 'province'
   include_subfolder 'bulgaria'
 end
 
-match 'spain' do
+match 'spain', 'es' do
   set region: 'spain'
   set region_type: 'country'
   include_subfolder 'spain'
 end
 
-match 'malaysia', 'pahang' do
+match 'malaysia', 'my' do
   set region: 'malaysia'
   set region_type: 'country'
+  set subregion_type: 'state'
+  include_subfolder 'malaysia'
 end
+
+
+## to here
 
 match 'kazakhstan', 'казахстан' do
   set region: 'kazakhstan'

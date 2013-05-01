@@ -21,4 +21,8 @@ match 'pennsylvania', w(/(us )?pa/) do
   match 'germany' do
     set place: 'germany'
   end
+
+  match w(/sweden( township)?/ do
+    set place: 'sweden township'
+  end
 end
