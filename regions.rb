@@ -63,6 +63,7 @@ match /united kingdom/, 'uk', 'u.k', 'u.k.', 'great britain', 'england', /^gb$/,
   set region: 'united kingdom'
   set region_type: 'sovereign state'
   set subregion_type: 'country'
+  include_subfolder 'united_kingdom'
 end
 
 match /switzerland/, 'ch' do
@@ -159,49 +160,46 @@ match 'malaysia', 'my' do
   include_subfolder 'malaysia'
 end
 
-
-## to here
-
-match 'kazakhstan', 'казахстан' do
+match 'kazakhstan', 'казахстан', 'kz' do
   set region: 'kazakhstan'
   set region_type: 'country'
 end
 
-match 'poland', 'jordanowo' do
+match 'poland', 'pl' do
   set region: 'poland'
   set region_type: 'country'
   set subregion_type: 'voivodeship'
   include_subfolder 'poland'
 end
 
-match 'australia', /^au$/ do
+match 'australia', 'au' do
   set region: 'australia'
   set region_type: 'country'
 end
 
-match 'denmark', /^dk$/ do
+match 'denmark', 'dk' do
   set region: 'denmark'
   set region_type: 'country'
 end
 
-match 'japan', 'kagoshima' do
+match 'japan', 'jp' do
   set region: 'japan'
   set region_type: 'country'
   set subregion_type: 'prefecture'
   include_subfolder 'japan'
 end
 
-match 'china', 'hong kong' do
+match 'china', 'cn' do
   set region: 'china'
   set region_type: 'country'
 end
 
-match 'new zealand', 'jordan river' do
+match 'new zealand', 'nz' do
   set region: 'new zealand'
   set region_type: 'country'
 end
 
-match 'belgium', w(/luxembourg.* be/) do
+match 'belgium', 'be' do
   set region: 'belgium'
   set region_type: 'country'
   set subregion_type: 'region'
@@ -209,81 +207,81 @@ match 'belgium', w(/luxembourg.* be/) do
   include_subfolder 'belgium'
 end
 
-match 'india' do
+match 'india', 'in' do
   set region: 'india'
   set region_type: 'country'
   set subregion_type: 'state'
   include_subfolder 'india'
 end
 
-match 'norway' do
+match 'norway', 'no' do
   set region: 'norway'
   set region_type: 'country'
 end
 
-match 'hungary' do
+match 'hungary', 'hu' do
   set region: 'hungary'
   set region_type: 'country'
 end
 
-match 'egypt' do
+match 'egypt', 'eg' do
   set region: 'egypt'
   set region_type: 'country'
 end
 
-match 'turkey' do
+match 'turkey', 'tr' do
   set region: 'turkey'
   set region_type: 'country'
 end
 
-match 'netherlands' do
+match 'netherlands', 'nl' do
   set region: 'netherlands'
   set region_type: 'country'
 end
 
-match both('portugal', no('little portugal')) do
+match 'portugal', 'pt' do
   set region: 'portugal'
   set region_type: 'country'
   include_subfolder 'portugal'
 end
 
-match 'israel' do
+match 'israel', 'il' do
   set region: 'israel'
   set region_type: 'country'
 end
 
-match 'slovenia' do
+match 'slovenia', 'si' do
   set region: 'slovenia'
   set region_type: 'country'
 end
 
-match 'greece' do
+match 'greece', 'gr' do
   set region: 'greece'
   set region_type: 'country'
 end
 
-match 'lithuania', 'литва' do
+match 'lithuania', 'литва', 'lt' do
   set region: 'lithuania'
   set region_type: 'country'
 end
 
-match 'chile' do
+match 'chile', 'cl' do
   set region: 'chile'
   set region_type: 'country'
 end
 
-match /czech rep/, /jord(a|á)n pond/, 'чехия' do
+match /czech rep/, 'чехия', 'cz' do
   set region: 'czech republic'
   set region_type: 'country'
 end
 
-match 'iran' do
+match 'iran', 'ir' do
   set region: 'iran'
   set region_type: 'country'
   include_subfolder 'iran'
 end
 
-match 'bolivia' do
+match 'bolivia', 'bo' do
   set region: 'bolivia'
   set region_type: 'country'
   set subregion_type: 'department'
@@ -291,139 +289,127 @@ match 'bolivia' do
   include_subfolder 'bolivia'
 end
 
-match 'jordan' do
+match 'jordan', 'jo' do
   set region: 'jordan'
   set region_type: 'country'
 end
 
-match 'romania' do
+match 'romania', 'ro' do
   set region: 'romania'
   set region_type: 'country'
 end
 
-match 'pakistan' do
+match 'pakistan', 'pk' do
   set region: 'pakistan'
   set region_type: 'country'
 end
 
-match w(/luxembo?urg/) do
+match w(/luxembo?urg/), 'lu' do
   set region: 'luxembourg'
   set region_type: 'country'
 end
 
-match 'united arab emirates', 'uae' do
+match 'united arab emirates', w(/u?ae/) do
   set region: 'united arab emirates'
   set region_type: 'country'
 end
 
-match 'namibia' do
+match 'namibia', 'na' do
   set region: 'namibia'
   set region_type: 'country'
 end
 
-match 'belarus', 'белоруссия' do
+match 'belarus', 'белоруссия', 'by' do
   set region: 'belarus'
   set region_type: 'country'
 end
 
-match 'cameroon' do
+match 'cameroon', 'cm' do
   set region: 'cameroon'
   set region_type: 'country'
 end
 
-match 'kenya' do
+match 'kenya', 'ke' do
   set region: 'kenya'
   set region_type: 'country'
 end
 
-match 'argentina' do
+match 'argentina', 'ar' do
   set region: 'argentina'
   set region_type: 'country'
+  include_subfolder: 'argentina'
 end
 
-match 'ecuador' do
+match 'ecuador', 'ec' do
   set region: 'ecuador'
   set region_type: 'country'
 end
 
-match both('venezuela', no('cuba')) do
+match 'venezuela', 've' do
   set region: 'venezuela'
   set region_type: 'country'
   set subregion_type: 'state'
   include_subfolder: 'venezuela'
 end
 
-match 'uruguay' do
+match 'uruguay', 'uy' do
   set region: 'uruguay'
   set region_type: 'country'
   include_subfolder: 'uruguay'
 end
 
-match 'cyprus' do
+match 'cyprus', 'cy' do
   set region: 'cyprus'
   set region_type: 'country'
 end
 
-match w(/col(o|u)mbia/) do
+match w(/col(o|u)mbia/), 'co' do
   set region: 'colombia'
   set region_type: 'country'
   set subregion_type: 'department'
   include_subfolder: 'colombia'
 end
 
-match 'cuba' do
+match 'cuba', 'cu' do
   set region: 'cuba'
   set region_type: 'country'
   include_subfolder: 'cuba'
 end
 
-match 'argentina' do
-  set region: 'argentina'
-  set region_type: 'country'
-  include_subfolder: 'argentina'
-end
-
-match 'northern mariana islands' do
+match 'northern mariana islands', 'cnmi', 'mp' do
   set region: 'northern mariana islands'
   set region_type: 'commonwealth'
-
   include_subfolder: 'northern_mariana_islands'
 end
 
-match 'puerto rico' do
+match 'puerto rico', 'pr' do
   set region: 'puerto rico'
   set region_type: 'commonwealth'
   include_subfolder: 'puerto_rico'
 end
 
-match 'chile' do
+match 'chile', 'cl' do
   set region: 'chile'
   set region_type: 'country'
   include_subfolder: 'chile'
 end
 
-match 'peru' do
+match 'peru', 'pe' do
   set region: 'peru'
   set region_type: 'country'
   include_subfolder: 'peru'
 end
 
-match 'solomon islands' do
+match 'solomon islands', 'sb' do
   set region: 'solomon islands'
   set region_type: 'country'
+  set subregion_type: 'province'
+  set subsubregion_type: 'island'
 
-  match 'central' do
-    set subregion: 'central'
-    set subregion_type: 'province'
-
-    match w(/florida( islands)?/), 'nggela' do
-      set subsubregion: 'florida islands'
-      set subsubregion_type: 'island'
-    end
-  end
+  include_subfolder 'solomon_islands'
 end
 
-match 'honduras' do
+match 'honduras', 'hn' do
   set region: 'honduras'
   set region_type: 'country'
   set subregion_type: 'department'
@@ -431,14 +417,14 @@ match 'honduras' do
   include_subfolder: 'honduras'
 end
 
-match 'liberia' do
+match 'liberia', 'lr' do
   set region: 'liberia'
   set region_type: 'country'
   set subregion_type: 'county'
   include_subfolder 'liberia'
 end
 
-match 'costa rica' do
+match 'costa rica', 'cr' do
   set region: 'costa rica'
   set region_type: 'country'
   set subregion_type: 'province'
@@ -446,7 +432,7 @@ match 'costa rica' do
   include_subfolder 'costa_rica'
 end
 
-match 'nigeria' do
+match 'nigeria', 'ng' do
   set region: 'nigeria'
   set region_type: 'country'
   set subregion_type: 'state'
@@ -454,15 +440,7 @@ match 'nigeria' do
   include_subfolder 'nigeria'
 end
 
-match 'solomon islands' do
-  set region: 'solomon islands'
-  set region_type: 'country'
-  set subregion_type: 'province'
-
-  include_subfolder 'solomon_islands'
-end
-
-match w(/(south georgia )?(and the )?south sandwhich islands/), 'sgssi' do
+match w(/(south georgia )?(and the )?south sandwhich islands/), 'sgssi', 'gs' do
   set region: 'south georgia and the south sandwhich islands'
   set region_type: 'british overseas territory'
   set subregion_type: 'island'
@@ -472,21 +450,21 @@ match w(/(south georgia )?(and the )?south sandwhich islands/), 'sgssi' do
   end
 end
 
-match 'hong kong' do
+match 'hong kong', 'hk' do
   set region: 'hong kong'
   set region_type: 'special administrative region'
   set subregion_type: 'district'
   include_subfolder 'hong_kong'
 end
 
-match 'bermuda' do
+match 'bermuda', 'bm' do
   set region: 'bermuda'
   set region_type: 'british overseas territory'
   set subregion_type: 'island'
   include_subfolder 'bermuda'
 end
 
-match 'papua new guinea' do
+match 'papua new guinea', 'pg' do
   set region: 'papua new guinea'
   set region_type: 'country'
   set subregion_type: 'island'

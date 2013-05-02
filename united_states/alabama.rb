@@ -6,4 +6,8 @@ match 'alabama', w(/(us )?al/) do
   match 'cuba' do
     set place: 'cuba'
   end
+
+  match 'bermuda' do
+    set place: 'bermuda'
+  end
 end

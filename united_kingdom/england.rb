@@ -27,6 +27,14 @@ match 'england' do
     end
   end
 
+  match 'warwickshire' do
+    set subsubregion: 'warwickshire'
+
+    match 'bermuda' do
+      set place: 'bermuda'
+    end
+  end
+
   match 'london' do
     set place: 'london'
   end

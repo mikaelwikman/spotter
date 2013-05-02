@@ -18,4 +18,8 @@ match 'north carolina', w(/(us )?nc/) do
   match 'turkey' do
     set place: 'turkey'
   end
+
+  match w(/bermuda( run)?/) do
+    set place: 'bermuda run'
+  end
 end
