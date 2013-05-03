@@ -20,7 +20,7 @@ match 'minnesota', w(/(us )?mn/) do
     set place: 'london'
   end
 
-  match w(/belgium( township)?/ do
+  match w(/belgium( township)?/) do
     set place: 'belgium township'
   end
 

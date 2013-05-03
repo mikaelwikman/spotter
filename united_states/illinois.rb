@@ -3,6 +3,10 @@ match 'illinois', w(/(us )?il/) do
   set subregion: 'illinois'
   set subregion_type: 'state'
 
+  match 'champaign' do
+    set subsubregion: 'champaign'
+  end
+
   match 'bolivia' do
     set place: 'bolivia'
   end

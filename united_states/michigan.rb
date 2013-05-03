@@ -6,7 +6,7 @@ match 'michigan', w(/(us )?mi/) do
     set place: 'kentucky'
   end
 
-  match w(/wales( township)?/ do
+  match w(/wales( township)?/) do
     set place: 'wales township'
   end
 

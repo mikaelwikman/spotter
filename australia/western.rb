@@ -1,6 +1,6 @@
 
-match 'western' do
-  set subregion: 'western'
+match 'western province' do
+  set subregion: 'western province'
 
   match 'denmark' do
     set place: 'denmark'

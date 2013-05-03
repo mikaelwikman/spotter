@@ -8,20 +8,20 @@ match /phill?ipp?ines/, 'ph' do
   set region_type: 'country'
   set subregion_type: 'province'
   set subsubregion_type: 'municipality'
-  include_subfolder: 'philippines'
+  include_subfolder 'philippines'
 end
 
 match 'canada', 'ca' do
   set region: 'canada'
   set region_type: 'country'
   set subregion_type: 'province'
-  include_subfolder: 'canada'
+  include_subfolder 'canada'
 end
 
 match 'kiribati', 'ki' do
   set region: 'kiribati'
   set region_type: 'country'
-  include_subfolder: 'kiribati'
+  include_subfolder 'kiribati'
 end
 
 match 'zimbabwe', 'zw' do
@@ -337,7 +337,7 @@ end
 match 'argentina', 'ar' do
   set region: 'argentina'
   set region_type: 'country'
-  include_subfolder: 'argentina'
+  include_subfolder 'argentina'
 end
 
 match 'ecuador', 'ec' do
@@ -349,13 +349,13 @@ match 'venezuela', 've' do
   set region: 'venezuela'
   set region_type: 'country'
   set subregion_type: 'state'
-  include_subfolder: 'venezuela'
+  include_subfolder 'venezuela'
 end
 
 match 'uruguay', 'uy' do
   set region: 'uruguay'
   set region_type: 'country'
-  include_subfolder: 'uruguay'
+  include_subfolder 'uruguay'
 end
 
 match 'cyprus', 'cy' do
@@ -367,37 +367,37 @@ match w(/col(o|u)mbia/), 'co' do
   set region: 'colombia'
   set region_type: 'country'
   set subregion_type: 'department'
-  include_subfolder: 'colombia'
+  include_subfolder 'colombia'
 end
 
 match 'cuba', 'cu' do
   set region: 'cuba'
   set region_type: 'country'
-  include_subfolder: 'cuba'
+  include_subfolder 'cuba'
 end
 
 match 'northern mariana islands', 'cnmi', 'mp' do
   set region: 'northern mariana islands'
   set region_type: 'commonwealth'
-  include_subfolder: 'northern_mariana_islands'
+  include_subfolder 'northern_mariana_islands'
 end
 
 match 'puerto rico', 'pr' do
   set region: 'puerto rico'
   set region_type: 'commonwealth'
-  include_subfolder: 'puerto_rico'
+  include_subfolder 'puerto_rico'
 end
 
 match 'chile', 'cl' do
   set region: 'chile'
   set region_type: 'country'
-  include_subfolder: 'chile'
+  include_subfolder 'chile'
 end
 
 match 'peru', 'pe' do
   set region: 'peru'
   set region_type: 'country'
-  include_subfolder: 'peru'
+  include_subfolder 'peru'
 end
 
 match 'solomon islands', 'sb' do
@@ -414,7 +414,7 @@ match 'honduras', 'hn' do
   set region_type: 'country'
   set subregion_type: 'department'
   set subsubregion_type: 'municipality'
-  include_subfolder: 'honduras'
+  include_subfolder 'honduras'
 end
 
 match 'liberia', 'lr' do

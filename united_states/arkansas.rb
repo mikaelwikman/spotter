@@ -14,4 +14,20 @@ match 'arkansas', w(/(us )?ar/) do
   match 'egypt' do
     set place: 'egypt'
   end
+
+  match 'lonoke' do
+    set subsubregion: 'lonoke'
+
+    match 'austin' do
+      set place: 'austin'
+    end
+  end
+
+  match 'woodruff' do
+    set subsubregion: 'woodruff'
+
+    match 'augusta' do
+      set place: 'augusta'
+    end
+  end
 end

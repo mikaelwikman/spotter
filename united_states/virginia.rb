@@ -6,7 +6,7 @@ match 'virginia', w(/(us )?va/) do
     set subsubregion: 'kentucky'
   end
 
-  match w(/bermuda city/ do
+  match w(/bermuda city/) do
     set place: 'bermuda city'
   end
 
@@ -14,7 +14,7 @@ match 'virginia', w(/(us )?va/) do
     set place: 'bermuda district'
   end
 
-  match w(/bermuda( hundred)?/ do
+  match w(/bermuda( hundred)?/) do
     set place: 'bermuda hundred'
   end
 end

@@ -3,6 +3,10 @@ match 'florida', w(/(us )?fl/) do
   set subregion: 'florida'
   set subregion_type: 'state'
 
+  match 'sarasota' do
+    set subsubregion: 'sarasota'
+  end
+
   match w(/(ft|fort) lauderdale/) do
     set place: 'fort lauderdale'
   end
