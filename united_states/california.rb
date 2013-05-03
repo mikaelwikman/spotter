@@ -294,10 +294,6 @@ match 'california', w(/(us )?ca/) do
 
   ####
 
-  match 'cuba' do
-    set place: 'cuba'
-  end
-
   match 'london' do
     set place: 'london'
   end
