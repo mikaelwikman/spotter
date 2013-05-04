@@ -1,35 +1,32 @@
-
-match 'dinuba' do
-  set place: 'dinuba'
+match 'advance' do
+  set place: 'advance'
 end
-match 'exeter' do
-  set place: 'exeter'
-end
-match 'farmersville' do
-  set place: 'farmersville'
-end
-match 'lindsay' do
-  set place: 'lindsay'
-end
-match 'porterville' do
-  set place: 'porterville'
-end
-match 'tulare' do
-  set place: 'tulare'
-end
-match 'visalia' do
-  set place: 'visalia'
-end
-match 'woodlake' do
-  set place: 'woodlake'
-end
-
-
 match 'allensworth' do
   set place: 'allensworth'
 end
 match 'alpaugh' do
   set place: 'alpaugh'
+end
+match 'angiola' do
+  set place: 'angiola'
+end
+match 'auckland' do
+  set place: 'auckland'
+end
+match 'badger' do
+  set place: 'badger'
+end
+match 'balance rock' do
+  set place: 'balance rock'
+end
+match 'blanco' do
+  set place: 'blanco'
+end
+match 'cairns corner' do
+  set place: 'cairns corner'
+end
+match 'calgro' do
+  set place: 'calgro'
 end
 match 'california hot springs' do
   set place: 'california hot springs'
@@ -45,6 +42,9 @@ match 'cutler' do
 end
 match 'delft colony' do
   set place: 'delft colony'
+end
+match 'dinuba' do
+  set place: 'dinuba'
 end
 match 'ducor' do
   set place: 'ducor'
@@ -64,6 +64,12 @@ end
 match 'el rancho' do
   set place: 'el rancho'
 end
+match 'exeter' do
+  set place: 'exeter'
+end
+match 'farmersville' do
+  set place: 'farmersville'
+end
 match 'goshen' do
   set place: 'goshen'
 end
@@ -76,6 +82,12 @@ end
 match 'ivanhoe' do
   set place: 'ivanhoe'
 end
+match 'johnsondale' do
+  set place: 'johnsondale'
+end
+match 'kaweah' do
+  set place: 'kaweah'
+end
 match 'kennedy meadows' do
   set place: 'kennedy meadows'
 end
@@ -84,6 +96,9 @@ match 'lemon cove' do
 end
 match 'lindcove' do
   set place: 'lindcove'
+end
+match 'lindsay' do
+  set place: 'lindsay'
 end
 match 'linnell camp' do
   set place: 'linnell camp'
@@ -99,6 +114,9 @@ match 'mcclenney tract' do
 end
 match 'monson' do
   set place: 'monson'
+end
+match 'north dinuba' do
+  set place: 'north dinuba'
 end
 match 'orosi' do
   set place: 'orosi'
@@ -127,6 +145,9 @@ end
 match 'poplar-cotton center' do
   set place: 'poplar-cotton center'
 end
+match 'porterville' do
+  set place: 'porterville'
+end
 match 'posey' do
   set place: 'posey'
 end
@@ -135,6 +156,9 @@ match 'poso park' do
 end
 match 'richgrove' do
   set place: 'richgrove'
+end
+match 'rocky hill' do
+  set place: 'rocky hill'
 end
 match 'rodriguez camp' do
   set place: 'rodriguez camp'
@@ -187,53 +211,32 @@ end
 match 'traver' do
   set place: 'traver'
 end
+match 'tulare' do
+  set place: 'tulare'
+end
+match 'visalia' do
+  set place: 'visalia'
+end
 match 'waukena' do
   set place: 'waukena'
 end
 match 'west goshen' do
   set place: 'west goshen'
 end
+match 'white river' do
+  set place: 'white river'
+end
 match 'wilsonia' do
   set place: 'wilsonia'
+end
+match 'woodlake' do
+  set place: 'woodlake'
 end
 match 'woodville' do
   set place: 'woodville'
 end
 match 'yettem' do
   set place: 'yettem'
-end
-match 'advance' do
-  set place: 'advance'
-end
-match 'angiola' do
-  set place: 'angiola'
-end
-match 'badger' do
-  set place: 'badger'
-end
-match 'balance rock' do
-  set place: 'balance rock'
-end
-match 'cairns corner' do
-  set place: 'cairns corner'
-end
-match 'calgro' do
-  set place: 'calgro'
-end
-match 'johnsondale' do
-  set place: 'johnsondale'
-end
-match 'kaweah' do
-  set place: 'kaweah'
-end
-match 'rocky hill' do
-  set place: 'rocky hill'
-end
-match 'white river' do
-  set place: 'white river'
-end
-match 'yokohl ranch' do
-  set place: 'yokohl ranch'
 end
 match 'yokohl valley' do
   set place: 'yokohl valley'
