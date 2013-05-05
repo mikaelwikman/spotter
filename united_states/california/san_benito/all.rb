@@ -1,4 +1,4 @@
-aromas
+match('aromas') { set place: 'aromas' }
 match 'bitterwater' do
   set place: 'bitterwater'
 end

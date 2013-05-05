@@ -1,4 +1,4 @@
-adela
+match('adela') { set place: 'adela' }
 match 'airport' do
   set place: 'airport'
 end

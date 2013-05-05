@@ -1,4 +1,4 @@
-counsman
+match('counsman') { set place: 'counsman' }
 match 'east nicolaus' do
   set place: 'east nicolaus'
 end

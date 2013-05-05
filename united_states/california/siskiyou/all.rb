@@ -1,4 +1,4 @@
-bestville
+match('bestville') { set place: 'bestville' }
 match 'black butte' do
   set place: 'black butte'
 end

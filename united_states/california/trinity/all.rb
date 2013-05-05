@@ -1,4 +1,4 @@
-big bar
+match('big bar') { set place: 'big bar' }
 match 'burnt ranch' do
   set place: 'burnt ranch'
 end

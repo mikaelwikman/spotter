@@ -1,4 +1,4 @@
-adelaida
+match('adelaida') { set place: 'adelaida' }
 match 'arroyo grande' do
   set place: 'arroyo grande'
 end

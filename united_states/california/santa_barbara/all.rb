@@ -1,4 +1,4 @@
-ballard
+match('ballard') { set place: 'ballard' }
 match 'buellton' do
   set place: 'buellton'
 end

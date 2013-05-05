@@ -1,4 +1,4 @@
-aspen valley
+match('aspen valley') { set place: 'aspen valley' }
 match 'blanchard' do
   set place: 'blanchard'
 end

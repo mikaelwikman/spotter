@@ -1,4 +1,4 @@
-acampo
+match('acampo') { set place: 'acampo' }
 match 'atlanta' do
   set place: 'atlanta'
 end

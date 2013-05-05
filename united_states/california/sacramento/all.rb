@@ -1,4 +1,4 @@
-antelope
+match('antelope') { set place: 'antelope' }
 match 'arden-arcade' do
   set place: 'arden-arcade'
 end

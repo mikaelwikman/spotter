@@ -1,4 +1,4 @@
-alum rock
+match('alum rock') { set place: 'alum rock' }
 match 'bell station' do
   set place: 'bell station'
 end

@@ -1,4 +1,4 @@
-bend
+match('bend') { set place: 'bend' }
 match 'corning' do
   set place: 'corning'
 end

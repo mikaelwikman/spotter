@@ -1,4 +1,4 @@
-atherton
+match('atherton') { set place: 'atherton' }
 match 'bellvale' do
   set place: 'bellvale'
 end
