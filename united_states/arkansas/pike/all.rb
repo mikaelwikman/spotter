@@ -1,0 +1,10 @@
+match('antoine') { set place: 'antoine' }
+match('daisy') { set place: 'daisy' }
+match('delight') { set place: 'delight' }
+match('glenwood') { set place: 'glenwood' }
+match('kirby') { set place: 'kirby' }
+match('langley') { set place: 'langley' }
+match('lodi') { set place: 'lodi' }
+match('murfreesboro') { set place: 'murfreesboro' }
+match('newhope') { set place: 'newhope' }
+match('rosboro') { set place: 'rosboro' }

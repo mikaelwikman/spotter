@@ -1,0 +1,14 @@
+match('blevins') { set place: 'blevins' }
+match('centerville') { set place: 'centerville' }
+match('clow') { set place: 'clow' }
+match('columbus') { set place: 'columbus' }
+match('emmet') { set place: 'emmet' }
+match('fulton') { set place: 'fulton' }
+match('hope') { set place: 'hope' }
+match('mccaskill') { set place: 'mccaskill' }
+match('mcnab') { set place: 'mcnab' }
+match('oakhaven') { set place: 'oakhaven' }
+match('ozan') { set place: 'ozan' }
+match('patmos') { set place: 'patmos' }
+match('perrytown') { set place: 'perrytown' }
+match('washington') { set place: 'washington' }

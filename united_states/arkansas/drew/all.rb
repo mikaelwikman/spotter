@@ -1,0 +1,10 @@
+match('coleman') { set place: 'coleman' }
+match('jerome') { set place: 'jerome' }
+match('lacey') { set place: 'lacey' }
+match('monticello') { set place: 'monticello' }
+match('montongo') { set place: 'montongo' }
+match('selma') { set place: 'selma' }
+match('tennessee') { set place: 'tennessee' }
+match('tillar') { set place: 'tillar' }
+match('wilmar') { set place: 'wilmar' }
+match('winchester') { set place: 'winchester' }

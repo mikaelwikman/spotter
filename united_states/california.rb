@@ -294,10 +294,6 @@ match 'california', w(/(us )?ca/) do
 
   ####
 
-  match 'london' do
-    set place: 'london'
-  end
-
   match 'santa ana' do
     set subsubregion: 'santa ana'
   end

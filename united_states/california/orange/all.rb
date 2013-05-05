@@ -1,11 +1,11 @@
 match 'aliso viejo' do
   set place: 'aliso viejo'
 end
-match 'anaheim' do
-  set place: 'anaheim'
-end
 match 'anaheim island' do
   set place: 'anaheim island'
+end
+match 'anaheim' do
+  set place: 'anaheim'
 end
 match 'brea' do
   set place: 'brea'
@@ -88,11 +88,11 @@ end
 match 'northwood' do
   set place: 'northwood'
 end
-match 'orange' do
-  set place: 'orange'
-end
 match 'orange park acres' do
   set place: 'orange park acres'
+end
+match 'orange' do
+  set place: 'orange'
 end
 match 'placentia' do
   set place: 'placentia'
@@ -112,11 +112,11 @@ end
 match 'san juan capistrano' do
   set place: 'san juan capistrano'
 end
-match 'santa ana' do
-  set place: 'santa ana'
-end
 match 'santa ana heights' do
   set place: 'santa ana heights'
+end
+match 'santa ana' do
+  set place: 'santa ana'
 end
 match 'santiago canyon' do
   set place: 'santiago canyon'
