@@ -1,7 +1,13 @@
 
 match 'england' do
   set subregion: 'england'
-  set subsubregion_type: 'region'
+  set subsubregion_type: 'county'
+
+  include_subfolder 'england'
+
+
+
+  ######
 
   match w(/yorkshire (and the )?(humber)?/) do
     set subsubregion: 'yorkshire and the humber'
