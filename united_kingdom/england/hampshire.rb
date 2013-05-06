@@ -5,7 +5,7 @@ match 'hampshire' do
   match('alton'){ set place: 'alton' }
   match('andover'){ set place: 'andover' }
   match('basingstoke'){ set place: 'basingstoke' }
-  match('bishop's waltham'){ set place: 'bishop's waltham' }
+  match(w(/bishop'?s waltham/)){ set place: 'bishop\'s waltham' }
   match('bordon'){ set place: 'bordon' }
   match('eastleigh'){ set place: 'eastleigh' }
   match('emsworth'){ set place: 'emsworth' }

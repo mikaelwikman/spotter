@@ -1,7 +1,7 @@
 match 'shropshire' do
   set subsubregion: 'shropshire'
 
-  match('bishop's castle'){ set place: 'bishop's castle' }
+  match(w(/bishop'?s castle/)){ set place: 'bishop\'s castle' }
   match('bridgnorth'){ set place: 'bridgnorth' }
   match('broseley'){ set place: 'broseley' }
   match('church stretton'){ set place: 'church stretton' }

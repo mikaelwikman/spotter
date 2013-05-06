@@ -29,7 +29,7 @@ match 'north yorkshire' do
   match('pickering'){ set place: 'pickering' }
   match('redcar'){ set place: 'redcar' }
   match('richmond'){ set place: 'richmond' }
-  match('robin hood's bay'){ set place: 'robin hood's bay' }
+  match('robin hood'){ set place: 'robin hood\'s bay' }
   match('saltburn-by-the-sea'){ set place: 'saltburn-by-the-sea' }
   match('scarborough'){ set place: 'scarborough' }
   match('selby'){ set place: 'selby' }

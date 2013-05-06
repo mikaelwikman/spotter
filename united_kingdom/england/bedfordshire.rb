@@ -56,7 +56,7 @@ match 'bedfordshire' do
   match('cotton end'){ set place: 'cotton end' }
   match('cranfield'){ set place: 'cranfield' }
   match('de parys'){ set place: 'de parys' }
-  match('duck's cross'){ set place: 'duck's cross' }
+  match(w(/duck'?s cross/)){ set place: 'duck\'s cross' }
   match('dunstable'){ set place: 'dunstable' }
   match('dunton'){ set place: 'dunton' }
   match('eastcotts'){ set place: 'eastcotts' }

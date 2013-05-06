@@ -3,7 +3,7 @@ match 'hertfordshire' do
 
   match('baldock'){ set place: 'baldock' }
   match('berkhamsted'){ set place: 'berkhamsted' }
-  match('bishop's stortford'){ set place: 'bishop's stortford' }
+  match(w(/bishop'?s stortford/)){ set place: 'bishop\'s stortford' }
   match('borehamwood'){ set place: 'borehamwood' }
   match('broxbourne'){ set place: 'broxbourne' }
   match('buntingford'){ set place: 'buntingford' }

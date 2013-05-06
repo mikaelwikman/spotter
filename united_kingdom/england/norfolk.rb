@@ -15,7 +15,7 @@ match 'norfolk' do
   match('hingham'){ set place: 'hingham' }
   match('holt'){ set place: 'holt' }
   match('hunstanton'){ set place: 'hunstanton' }
-  match('king's lynn'){ set place: 'king's lynn' }
+  match(w(/king'?s lynn/)){ set place: 'king\'s lynn' }
   match('loddon'){ set place: 'loddon' }
   match('north walsham'){ set place: 'north walsham' }
   match('rackheath eco-town'){ set place: 'rackheath eco-town' }
