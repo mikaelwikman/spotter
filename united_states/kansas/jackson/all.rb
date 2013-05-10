@@ -1,0 +1,9 @@
+match('circleville') { set place: 'circleville' }
+match('delia') { set place: 'delia' }
+match('denison') { set place: 'denison' }
+match('holton') { set place: 'holton' }
+match('hoyt') { set place: 'hoyt' }
+match('mayetta') { set place: 'mayetta' }
+match('netawaka') { set place: 'netawaka' }
+match('soldier') { set place: 'soldier' }
+match('whiting') { set place: 'whiting' }

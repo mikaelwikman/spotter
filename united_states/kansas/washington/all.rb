@@ -1,0 +1,12 @@
+match('barnes') { set place: 'barnes' }
+match('clifton') { set place: 'clifton' }
+match('greenleaf') { set place: 'greenleaf' }
+match('haddam') { set place: 'haddam' }
+match('hanover') { set place: 'hanover' }
+match('hollenberg') { set place: 'hollenberg' }
+match('linn') { set place: 'linn' }
+match('mahaska') { set place: 'mahaska' }
+match('morrowville') { set place: 'morrowville' }
+match('palmer') { set place: 'palmer' }
+match('vining') { set place: 'vining' }
+match('washington') { set place: 'washington' }

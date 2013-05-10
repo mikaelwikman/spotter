@@ -1,0 +1,11 @@
+match('canton') { set place: 'canton' }
+match('conway') { set place: 'conway' }
+match('elyria') { set place: 'elyria' }
+match('galva') { set place: 'galva' }
+match('inman') { set place: 'inman' }
+match('lindsborg') { set place: 'lindsborg' }
+match('marquette') { set place: 'marquette' }
+match('mcpherson') { set place: 'mcpherson' }
+match('moundridge') { set place: 'moundridge' }
+match('roxbury') { set place: 'roxbury' }
+match('windom') { set place: 'windom' }

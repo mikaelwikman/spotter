@@ -1,0 +1,9 @@
+match('baileyville') { set place: 'baileyville' }
+match('bern') { set place: 'bern' }
+match('centralia') { set place: 'centralia' }
+match('corning') { set place: 'corning' }
+match('goff') { set place: 'goff' }
+match('oneida') { set place: 'oneida' }
+match('sabetha') { set place: 'sabetha' }
+match('seneca') { set place: 'seneca' }
+match('wetmore') { set place: 'wetmore' }

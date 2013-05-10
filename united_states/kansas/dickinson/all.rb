@@ -1,0 +1,23 @@
+match('abilene') { set place: 'abilene' }
+match('buckeye') { set place: 'buckeye' }
+match('carlton') { set place: 'carlton' }
+match('chapman') { set place: 'chapman' }
+match('detroit') { set place: 'detroit' }
+match('dillon') { set place: 'dillon' }
+match('elmo') { set place: 'elmo' }
+match('enterprise') { set place: 'enterprise' }
+match('herington') { set place: 'herington' }
+match('holland') { set place: 'holland' }
+match('hope') { set place: 'hope' }
+match('industry') { set place: 'industry' }
+match('lyona') { set place: 'lyona' }
+match('manchester') { set place: 'manchester' }
+match('navarre') { set place: 'navarre' }
+match('pearl') { set place: 'pearl' }
+match('shady brook') { set place: 'shady brook' }
+match('solomon') { set place: 'solomon' }
+match('stoney') { set place: 'stoney' }
+match('sutphen') { set place: 'sutphen' }
+match('talmage') { set place: 'talmage' }
+match('upland') { set place: 'upland' }
+match('woodbine') { set place: 'woodbine' }
