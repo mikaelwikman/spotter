@@ -470,3 +470,11 @@ match 'papua new guinea', 'pg' do
   set subregion_type: 'island'
   include_subfolder 'papua_new_guinea'
 end
+
+match 'afghanistan' do
+  set region: 'afghanistan'
+end
+
+match 'angola' do
+  set region: 'angola'
+end

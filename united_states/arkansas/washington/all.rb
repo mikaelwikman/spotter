@@ -38,7 +38,7 @@ match('mount olive') { set place: 'mount olive' }
 match('oak grove') { set place: 'oak grove' }
 match('odell') { set place: 'odell' }
 match('onda') { set place: 'onda' }
-match('pilgrim's rest') { set place: 'pilgrim's rest' }
+match('pilgrim\'s rest') { set place: 'pilgrim\'s rest' }
 match('pitkin corner') { set place: 'pitkin corner' }
 match('prairie grove') { set place: 'prairie grove' }
 match('rhea') { set place: 'rhea' }

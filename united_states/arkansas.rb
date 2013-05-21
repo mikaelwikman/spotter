@@ -3,9 +3,6 @@ match 'arkansas', w(/(us )?ar/) do
   set subregion: 'arkansas'
   set subregion_type: 'state'
 
-  set subsubregion: 'arkansas'
-  include_subfolder 'arkansas/arkansas'
-
   match 'ashley' do
     set subsubregion: 'ashley'
     include_subfolder 'arkansas/ashley'
@@ -301,5 +298,9 @@ match 'arkansas', w(/(us )?ar/) do
   match 'yell' do
     set subsubregion: 'yell'
     include_subfolder 'arkansas/yell'
+  end
+  match 'arkansas' do
+    set subsubregion: 'arkansas'
+    include_subfolder 'arkansas/arkansas'
   end
 end
