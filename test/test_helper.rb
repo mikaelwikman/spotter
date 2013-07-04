@@ -2,7 +2,7 @@ require 'bundler/setup'
 require 'test/unit'
 require 'turn/autorun'
 require 'shoulda'
-require 'mocha'
+require 'mocha/setup'
 
 #Turn.config.format = :dot
 
