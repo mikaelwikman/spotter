@@ -1,0 +1,41 @@
+
+# Spotter
+
+Robustly identify countries, states, islands, cities and whatnot from text. This is still BETA. Although it supports most countries and states, it still lacks regions and cities for the most part of the world. 
+
+## Description
+
+What if I ask you: "What country is 'ontario'", or "where is 'ca'"? I would answer: Ontario is a state in Canada and a city in California. CA is the ISO abbreviation for Canada, and also the abbreviation for California.
+
+The goal of this gem is such: Given a string, do your very best to identify all possible locations, and order them by significance. Provide as much information as possible; What kind of region is this? Country? City? Island? Continent?
+
+# Usage
+
+```ruby
+require 'spotter'
+
+spotter = Spotter.new
+
+results = spotter.identify('new york')
+
+puts results.first.to_s # => "United States, New York"
+
+puts results[0].regions.first.name # => "United States"
+puts results[0].regions.first.type # => "country"
+puts results[1].regions.first.name # => "New York"
+puts results[2].regions.first.type # => "state"
+```
+
+It can handle text in different cases, spellings, abbreviations, etc.
+
+```ruby
+results = spotter.identify('ontario, california')
+
+puts results.first.to_s # => "United States, California, San Bernardino, Ontario"
+```
+
+It returns all matches found:
+
+```ruby
+results = spotter.identify('mexico')
+```

@@ -12,7 +12,7 @@ Gem::Specification.new do |gem|
   gem.test_files    = gem.files.grep(%r{^(test|features)/})
   gem.name          = "spotter"
   gem.require_paths = ["lib"]
-  gem.version       = '1.0.0'
+  gem.version       = '1.0.1'
   gem.add_dependency 'hashrules', '>1.1.3', '<1.2'
   gem.add_dependency 'titleize'
   gem.add_dependency 'unicode'
