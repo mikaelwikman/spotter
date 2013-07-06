@@ -1,4 +1,5 @@
 require 'hash_rules'
+require 'spotter/result'
 
 class Spotter
   require 'spotter/result'
@@ -10,6 +11,8 @@ class Spotter
     hashrules = load_hashrules
 
     result = hashrules.process(text.dup, max_submatch_level: 3, limit: -1)
+
+    result.map{|res| Result.new(res)}
   end
 
   private
