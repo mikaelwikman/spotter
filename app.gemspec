@@ -15,4 +15,5 @@ Gem::Specification.new do |gem|
   gem.version       = '1.0.0'
   gem.add_dependency 'hashrules', '>1.1.3', '<1.2'
   gem.add_dependency 'titleize'
+  gem.add_dependency 'unicode'
 end

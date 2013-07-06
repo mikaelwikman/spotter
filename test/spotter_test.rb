@@ -1,3 +1,5 @@
+# encoding: utf-8
+
 require 'test_helper'
 require 'spotter'
 require 'spotter/region'
@@ -35,6 +37,24 @@ class SpotterTest < TestCase
 
       assert_equal 'Canada, Ontario', result[0].to_s
       assert_equal 'United States, California, San Bernardino, Ontario', result[1].to_s
+    end
+
+    should 'discard commas, punctuation, etc' do
+      results = @it.identify '#united.-?states-_!'
+      assert_equal 'United States', results[0].to_s
+    end
+
+    should 'ignore case' do
+      results = @it.identify 'uniTEd stAteS'
+      assert_equal 'United States', results[0].to_s
+
+      results = @it.identify 'роСсиЯ'
+      assert_equal 'Russia', results[0].to_s
+    end
+
+    should 'ignore double spaces' do
+      results = @it.identify 'united       states'
+      assert_equal 'United States', results[0].to_s
     end
   end
 end
