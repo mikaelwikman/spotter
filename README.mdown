@@ -9,7 +9,7 @@ What if I ask you: "What country is 'ontario'", or "where is 'ca'"? I would answ
 
 The goal of this gem is such: Given a string, do your very best to identify all possible locations, and order them by significance. Provide as much information as possible; What kind of region is this? Country? City? Island? Continent?
 
-# Usage
+## Usage
 
 ```ruby
 require 'spotter'
@@ -26,7 +26,7 @@ puts results[1].regions.first.name # => "New York"
 puts results[2].regions.first.type # => "state"
 ```
 
-It can handle text in different cases, spellings, abbreviations, etc.
+It can handle text in different cases, spellings, etc.
 
 ```ruby
 results = spotter.identify('ontario, california')
@@ -37,5 +37,18 @@ puts results.first.to_s # => "United States, California, San Bernardino, Ontario
 It returns all matches found:
 
 ```ruby
-results = spotter.identify('mexico')
+results = spotter.identify('canada')
+puts results[0].to_s # => 'Canada'
+puts results[1].to_s # => 'United States, Kansas, Canada'
 ```
+
+It works with abbreviations too:
+
+```ruby
+puts spotter.identify('se').first.to_s # => 'Sweden'
+```
+
+## TODO
+
+* Add support for more states, cities and other regions
+* Add support for html/bbcode tagging of search queries, showing identified parts of the string 
