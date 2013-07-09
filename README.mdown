@@ -48,6 +48,14 @@ It works with abbreviations too:
 puts spotter.identify('se').first.to_s # => 'Sweden'
 ```
 
+## Rake task
+
+You can also use the gem with the rake task `identify` as such:
+
+```
+rake identify['new york']
+```
+
 ## TODO
 
 * Add support for more states, cities and other regions
