@@ -9,6 +9,8 @@ What if I ask you: "What region is 'ontario'", or "where is 'ca'"? I would answe
 
 The goal of this gem is such: Given a string, do your very best to identify all possible locations, and order them by significance. Provide as much information as possible; What kind of region is this? Country? City? Island? Continent?
 
+This gem is built on-top of the Hashrules gem https://github.com/mikaelwikman/hashrules
+
 ## Installation
 
 ```
@@ -68,3 +70,7 @@ rake identify['new york']
 
 * Add support for more states, cities and other regions
 * Add support for html/bbcode tagging of search queries, showing identified parts of the string 
+
+## Real-life applications
+
+* This is a central gem for determining the location of aircraft offers in http://www.globalaircraftmarket.com
