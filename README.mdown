@@ -20,10 +20,10 @@ results = spotter.identify('new york')
 
 puts results.first.to_s # => "United States, New York"
 
-puts results[0].regions.first.name # => "United States"
-puts results[0].regions.first.type # => "country"
-puts results[1].regions.first.name # => "New York"
-puts results[1].regions.first.type # => "state"
+puts results.first.regions[0].name # => "United States"
+puts results.first.regions[0].type # => "country"
+puts results.first.regions[1].name # => "New York"
+puts results.first.regions[1].type # => "state"
 ```
 
 It can handle text in different cases, spellings, etc.
@@ -32,8 +32,8 @@ It can handle text in different cases, spellings, etc.
 spotter.identify('ontARIO, california').first.to_s 
  # => "United States, California, San Bernardino, Ontario"
 
-spotter.identify('росСиЯ').first.to_s => 'Russia'
-spotter.identify('ruSSia').first.to_s => 'Russia'
+spotter.identify('росСиЯ').first.to_s # => 'Russia'
+spotter.identify('ruSSia').first.to_s # => 'Russia'
 ```
 
 It returns all matches found:
