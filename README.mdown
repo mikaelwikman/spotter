@@ -9,6 +9,12 @@ What if I ask you: "What region is 'ontario'", or "where is 'ca'"? I would answe
 
 The goal of this gem is such: Given a string, do your very best to identify all possible locations, and order them by significance. Provide as much information as possible; What kind of region is this? Country? City? Island? Continent?
 
+## Installation
+
+```
+gem install region-spotter
+```
+
 ## Usage
 
 ```ruby
