@@ -14,6 +14,8 @@ class Spotter
     text.gsub!(/\s\s+/, ' ')
     text.strip!
 
+    puts "Clean string is #{text}"
+
     hashrules = load_hashrules
 
     result = hashrules.process(text, max_submatch_level: 3, limit: -1)
